@@ -72,7 +72,10 @@ release = '1.0.9'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+#For translation
+locale_dirs = ['locale/']   # path is example but recommended.
+gettext_compact = False     # optional.
+language = 'en'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -360,6 +363,3 @@ epub_exclude_files = ['search.html']
 
 # If false, no index is generated.
 # epub_use_index = True
-
-locale_dirs = ['locale/']   # path is example but recommended.
-gettext_compact = False     # optional.
