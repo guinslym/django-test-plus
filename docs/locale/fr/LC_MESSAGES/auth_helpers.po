@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Frank Wiles
+# This file is distributed under the same license as the django-test-plus
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: django-test-plus 1.0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-11 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../auth_helpers.rst:2
+msgid "Authentication Helpers"
+msgstr ""
+
+#: ../../auth_helpers.rst:5
+msgid "assertLoginRequired(url\\_name, \\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../auth_helpers.rst:7
+msgid ""
+"It's pretty easy to add a new view to a project and forget to restrict it"
+" to be login required, this method helps make it easy to test that a "
+"given named URL requires auth::"
+msgstr ""
+
+#: ../../auth_helpers.rst:17
+msgid "login context"
+msgstr ""
+
+#: ../../auth_helpers.rst:19
+msgid ""
+"Along with ensuing a view requires login and creating users, the next "
+"thing you end up doing is logging in as various users to test our your "
+"restriction logic. This can be made easier with the following context::"
+msgstr ""
+
+#: ../../auth_helpers.rst:37
+msgid ""
+"Since we're likely creating our users using ``make_user()`` from above, "
+"the login context assumes the password is 'password' unless specified "
+"otherwise. Therefore you you can do::"
+msgstr ""
+
+#: ../../auth_helpers.rst:47
+msgid ""
+"We can also derive the username if we're using ``make_user()`` so we can "
+"shorten that up even further like this::"
+msgstr ""
+

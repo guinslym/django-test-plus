@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Frank Wiles
+# This file is distributed under the same license as the django-test-plus
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: django-test-plus 1.0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-11 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../low_query_counts.rst:2
+msgid "Ensuring low query counts"
+msgstr ""
+
+#: ../../low_query_counts.rst:5
+msgid "assertNumQueriesLessThan(number) - context"
+msgstr ""
+
+#: ../../low_query_counts.rst:7
+msgid ""
+"Django provides `assertNumQueries "
+"<https://docs.djangoproject.com/en/1.8/topics/testing/tools/#django.test.TransactionTestCase.assertNumQueries>`__"
+" which is great when your code generates a specific number of queries. "
+"However, if due to the nature of your data this number can vary you often"
+" don't attempt to ensure the code doesn't start producing a ton more "
+"queries than you expect::"
+msgstr ""
+
+#: ../../low_query_counts.rst:20
+msgid ""
+"**NOTE:** This isn't possible in versions of Django prior to 1.6, so the "
+"context will run your code and assertions and issue a warning that it "
+"cannot check the number of queries generated."
+msgstr ""
+
+#: ../../low_query_counts.rst:25
+msgid "assertGoodView(url\\_name, \\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../low_query_counts.rst:27
+msgid "This method does a few of things for you, it:"
+msgstr ""
+
+#: ../../low_query_counts.rst:29
+msgid "Retrieves the name URL"
+msgstr ""
+
+#: ../../low_query_counts.rst:30
+msgid "Ensures the view does not generate more than 50 queries"
+msgstr ""
+
+#: ../../low_query_counts.rst:31
+msgid "Ensures the response has status code 200"
+msgstr ""
+
+#: ../../low_query_counts.rst:32
+msgid "Returns the response"
+msgstr ""
+
+#: ../../low_query_counts.rst:34
+msgid ""
+"Often a wide sweeping test like this is better than no test at all. You "
+"can use it like this::"
+msgstr ""
+

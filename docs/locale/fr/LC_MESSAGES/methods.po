@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Frank Wiles
+# This file is distributed under the same license as the django-test-plus
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: django-test-plus 1.0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-11 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../methods.rst:2
+msgid "Methods"
+msgstr ""
+
+#: ../../methods.rst:5
+msgid "reverse(url\\_name, \\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../methods.rst:7
+msgid ""
+"When testing views you often find yourself needing to reverse the URL's "
+"name. With django-test-plus there is no need for the ``from "
+"django.core.urlresolvers import reverse`` boilerplate. Instead just use::"
+msgstr ""
+
+#: ../../methods.rst:14
+msgid ""
+"As you can see our reverse also passes along any args or kwargs you need "
+"to pass in."
+msgstr ""
+
+#: ../../methods.rst:18
+msgid "get(url\\_name, follow=False, \\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../methods.rst:20
+msgid ""
+"Another thing you do often is HTTP get urls. Our ``get()`` method assumes"
+" you are passing in a named URL with any args or kwargs necessary to "
+"reverse the url\\_name. If needed, place kwargs for ``TestClient.get()`` "
+"in an 'extra' dictionary.::"
+msgstr ""
+
+#: ../../methods.rst:32
+msgid ""
+"When using this get method two other things happen for you, we store the "
+"last response in ``self.last\\_response`` and the response's Context in "
+"``self.context``. So instead of::"
+msgstr ""
+
+#: ../../methods.rst:41
+msgid "You can instead write::"
+msgstr ""
+
+#: ../../methods.rst:48
+msgid "It's also smart about already reversed URLs so you can be lazy and do::"
+msgstr ""
+
+#: ../../methods.rst:55
+msgid ""
+"If you need to pass query string parameters to your url name, you can do "
+"so like this. Assuming the name 'search' maps to '/search/' then::"
+msgstr ""
+
+#: ../../methods.rst:60
+msgid "Would GET /search/?query=testing"
+msgstr ""
+
+#: ../../methods.rst:63
+msgid "post(url\\_name, follow=False, \\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../methods.rst:65
+msgid ""
+"Our ``post()`` method takes a named URL, an optional dictionary of data "
+"you wish to post and any args or kwargs necessary to reverse the "
+"url\\_name. If needed, place kwargs for ``TestClient.post()`` in an "
+"'extra' dictionary.::"
+msgstr ""
+
+#: ../../methods.rst:74
+msgid "get_context(key)"
+msgstr ""
+
+#: ../../methods.rst:76
+msgid ""
+"Often you need to get things out of the template context, so let's make "
+"that easy::"
+msgstr ""
+
+#: ../../methods.rst:84
+msgid "assertInContext(key)"
+msgstr ""
+
+#: ../../methods.rst:86
+msgid ""
+"You can ensure a specific key exists in the last response's context by "
+"using::"
+msgstr ""
+
+#: ../../methods.rst:94
+msgid "assertContext(key, value)"
+msgstr ""
+
+#: ../../methods.rst:96
+msgid ""
+"We can get context values and ensure they exist, but so let's also test "
+"equality while we're at it. This asserts that key == value::"
+msgstr ""
+
+#: ../../methods.rst:104
+msgid "response\\_XXX(response) - status code checking"
+msgstr ""
+
+#: ../../methods.rst:106
+msgid ""
+"Another test you often need to do is check that a response has a certain "
+"HTTP status code. With Django's default TestCase you would write::"
+msgstr ""
+
+#: ../../methods.rst:115
+msgid "With django-test-plus you can shorten that to be::"
+msgstr ""
+
+#: ../../methods.rst:121
+msgid "django-test-plus provides the following response method checks for you::"
+msgstr ""
+
+#: ../../methods.rst:132
+msgid ""
+"All of which take an option Django test client response as their only "
+"argument. If it's available, the response_XXX methods will use the last "
+"response. So you can do::"
+msgstr ""
+
+#: ../../methods.rst:140
+msgid "Which is a bit shorter."
+msgstr ""
+
+#: ../../methods.rst:143
+msgid "get\\_check\\_200(url\\_name, \\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../methods.rst:145
+msgid ""
+"GETing and checking views return status 200 is so common a test this "
+"method makes it even easier::"
+msgstr ""
+
+#: ../../methods.rst:152
+msgid "make\\_user(username='testuser', password='password', perms=None)"
+msgstr ""
+
+#: ../../methods.rst:154
+msgid ""
+"When testing out views you often need to create various users to ensure "
+"all of your logic is safe and sound. To make this process easier, this "
+"method will create a user for you::"
+msgstr ""
+
+#: ../../methods.rst:162
+msgid ""
+"**NOTE:** This work properly with version of Django prior to 1.6 and will"
+" use your own User class if you have created your own User model."
+msgstr ""
+
+#: ../../methods.rst:165
+msgid ""
+"If creating a User in your project is more complicated, say for example "
+"you removed the ``username`` field from the default Django Auth model you"
+" can provide a `Factory Boy "
+"<https://factoryboy.readthedocs.org/en/latest/>`__ factory to create it "
+"or simply override this method on your own sub-class."
+msgstr ""
+
+#: ../../methods.rst:171
+msgid "To use a Factory Boy factory simply create your class like this::"
+msgstr ""
+
+#: ../../methods.rst:183
+msgid ""
+"**NOTE:** Users created by this method will have their password set to "
+"the string 'password' by default, in order to ease testing. If you need a"
+" specific password simply override the ``password`` parameter."
+msgstr ""
+
+#: ../../methods.rst:187
+msgid ""
+"You can also pass in user permissions by passing in a string of "
+"'``<app_name>.<perm name>``' or '``<app_name>.*``'.  For example::"
+msgstr ""
+

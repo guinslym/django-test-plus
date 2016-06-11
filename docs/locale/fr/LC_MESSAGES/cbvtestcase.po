@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Frank Wiles
+# This file is distributed under the same license as the django-test-plus
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: django-test-plus 1.0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-11 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../cbvtestcase.rst:2
+msgid "Testing class-based \"generic\" views"
+msgstr ""
+
+#: ../../cbvtestcase.rst:4
+msgid ""
+"The TestCase methods ``get()`` and ``post()`` work for both function-"
+"based and class-based views. However, in doing so they invoke Django's "
+"URL resolution, middleware, template processing, and decorator systems. "
+"For integration testing this is desirable, as you want to ensure your "
+"URLs resolve properly, view permissions are enforced, etc. For unit "
+"testing this is costly because all these Django request/response systems "
+"are invoked in addition to your method, and they typically do not affect "
+"the end result."
+msgstr ""
+
+#: ../../cbvtestcase.rst:13
+msgid ""
+"Class-based views (derived from Django's ``generic.models.View`` class) "
+"contain methods and mixins which makes granular unit testing (more) "
+"feasible. Quite often your usage of a generic view class comprises a "
+"simple override of an existing method. Invoking the entire view and the "
+"Django request/response stack is a waste of time... you really want to "
+"call the overridden method directly and test the result."
+msgstr ""
+
+#: ../../cbvtestcase.rst:20
+msgid "CBVTestCase to the rescue!"
+msgstr ""
+
+#: ../../cbvtestcase.rst:22
+msgid ""
+"As with TestCase above, simply have your tests inherit from "
+"test\\_plus.test.CBVTestCase rather than TestCase like so::"
+msgstr ""
+
+#: ../../cbvtestcase.rst:30
+msgid "Methods"
+msgstr ""
+
+#: ../../cbvtestcase.rst:33
+msgid "get_instance(cls, initkwargs=None, request=None, \\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../cbvtestcase.rst:35
+msgid ""
+"This core method simplifies the instantiation of your class, giving you a"
+" way to invoke class methods directly."
+msgstr ""
+
+#: ../../cbvtestcase.rst:38
+msgid ""
+"Returns an instance of ``cls``, initialized with ``initkwargs``. Sets "
+"``request``, ``args``, and ``kwargs`` attributes on the class instance. "
+"``args`` and ``kwargs`` are the same values you would pass to "
+"``reverse()``."
+msgstr ""
+
+#: ../../cbvtestcase.rst:42
+msgid "Sample usage::"
+msgstr ""
+
+#: ../../cbvtestcase.rst:61
+msgid "get(cls, initkwargs=None, \\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../cbvtestcase.rst:63
+msgid ""
+"Invokes ``cls.get()`` and returns the response, rendering template if "
+"possible. Builds on the ``CBVTestCase.get_instance()`` foundation."
+msgstr ""
+
+#: ../../cbvtestcase.rst:66
+msgid "All test\\_plus.test.TestCase methods are valid, so the following works::"
+msgstr ""
+
+#: ../../cbvtestcase.rst:71
+msgid ""
+"All test\\_plus TestCase side-effects are honored and all test\\_plus "
+"TestCase assertion methods work with ``CBVTestCase.get()``."
+msgstr ""
+
+#: ../../cbvtestcase.rst:74 ../../cbvtestcase.rst:93
+msgid ""
+"**NOTE:** This method bypasses Django's middleware, and therefore context"
+" variables created by middleware are not available. If this affects your "
+"template/context testing you should use TestCase instead of CBVTestCase."
+msgstr ""
+
+#: ../../cbvtestcase.rst:79
+msgid "post(cls, data=None, initkwargs=None, \\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../cbvtestcase.rst:81
+msgid ""
+"Invokes ``cls.post()`` and returns the response, rendering template if "
+"possible. Builds on the ``CBVTestCase.get_instance()`` foundation."
+msgstr ""
+
+#: ../../cbvtestcase.rst:84
+msgid "Example::"
+msgstr ""
+
+#: ../../cbvtestcase.rst:90 ../../cbvtestcase.rst:103 ../../cbvtestcase.rst:112
+msgid ""
+"All test\\_plus TestCase side-effects are honored and all test\\_plus "
+"TestCase assertion methods work with ``CBVTestCase.post()``."
+msgstr ""
+
+#: ../../cbvtestcase.rst:98
+msgid "get_check_200(cls, initkwargs=None, \\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../cbvtestcase.rst:100
+msgid ""
+"Works just like ``TestCase.get_check_200()``. Caller must provide a view "
+"class instead of a URL name or path parameter."
+msgstr ""
+
+#: ../../cbvtestcase.rst:107
+msgid "assertGoodView(cls, initkwargs=None, \\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../cbvtestcase.rst:109
+msgid ""
+"Works just like ``TestCase.assertGoodView()``. Caller must provide a view"
+" class instead of a URL name or path parameter."
+msgstr ""
+

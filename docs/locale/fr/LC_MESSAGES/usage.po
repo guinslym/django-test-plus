@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Frank Wiles
+# This file is distributed under the same license as the django-test-plus
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: django-test-plus 1.0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-11 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../usage.rst:2
+msgid "Usage"
+msgstr ""
+
+#: ../../usage.rst:4
+msgid ""
+"Using django-test-plus is pretty easy, simply have your tests inherit "
+"from test\\_plus.test.TestCase rather than the normal "
+"django.test.TestCase like so::"
+msgstr ""
+
+#: ../../usage.rst:13
+msgid ""
+"This is sufficient to get things rolling, but you are encouraged to "
+"create *your own* sub-class on a per project basis. This will allow you "
+"to add your own project specific helper methods."
+msgstr ""
+
+#: ../../usage.rst:17
+msgid ""
+"For example, if you have a django project named 'myproject', you might "
+"create the following in ``myproject/test.py``::"
+msgstr ""
+
+#: ../../usage.rst:25
+msgid "And then in your tests use::"
+msgstr ""
+
+#: ../../usage.rst:32
+msgid ""
+"Note that you can also option to import it like this if you want, which "
+"is more similar to the regular importing of Django's TestCase::"
+msgstr ""
+

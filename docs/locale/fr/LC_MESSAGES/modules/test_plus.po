@@ -1,0 +1,242 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Frank Wiles
+# This file is distributed under the same license as the django-test-plus
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: django-test-plus 1.0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-11 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../modules/test_plus.rst:2
+msgid "test_plus package"
+msgstr ""
+
+#: ../../modules/test_plus.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../modules/test_plus.rst:8
+msgid "test_plus.runner module"
+msgstr ""
+
+#: of test_plus.runner.NoLoggingRunner:1
+msgid "Bases: :class:`django.test.runner.DiscoverRunner`"
+msgstr ""
+
+#: ../../modules/test_plus.rst:16
+msgid "test_plus.test module"
+msgstr ""
+
+#: of test_plus.test.CBVTestCase:1
+msgid "Bases: :class:`test_plus.test.TestCase`"
+msgstr ""
+
+#: of test_plus.test.CBVTestCase:1
+msgid ""
+"Directly calls class-based generic view methods, bypassing the Django "
+"test Client."
+msgstr ""
+
+#: of test_plus.test.CBVTestCase:4
+msgid "This process bypasses middleware invocation and URL resolvers."
+msgstr ""
+
+#: of test_plus.test.CBVTestCase:6
+msgid "Example usage:"
+msgstr ""
+
+#: of test_plus.test.CBVTestCase:8
+msgid "from myapp.views import MyClass"
+msgstr ""
+
+#: of test_plus.test.CBVTestCase:10
+msgid "class MyClassTest(CBVTestCase):"
+msgstr ""
+
+#: of test_plus.test.CBVTestCase:21
+msgid "def test_special_method(self):"
+msgstr ""
+
+#: of test_plus.test.CBVTestCase:13
+msgid ""
+"request = RequestFactory().get('/') instance = self.get_instance(MyClass,"
+" request=request)"
+msgstr ""
+
+#: of test_plus.test.CBVTestCase:16
+msgid "# invoke a MyClass method result = instance.special_method()"
+msgstr ""
+
+#: of test_plus.test.CBVTestCase:19
+msgid "# make assertions self.assertTrue(result)"
+msgstr ""
+
+#: of test_plus.test.CBVTestCase.assertGoodView:1
+msgid ""
+"Quick-n-dirty testing of a given view. Ensures view returns a 200 status "
+"and that generates less than 50 database queries."
+msgstr ""
+
+#: of test_plus.test.CBVTestCase.get:1
+msgid ""
+"Calls cls.get() method after instantiating view class with `initkwargs`. "
+"Renders view templates and sets context if appropriate."
+msgstr ""
+
+#: of test_plus.TestCase.get_check_200:1
+#: test_plus.test.CBVTestCase.get_check_200:1
+#: test_plus.test.TestCase.get_check_200:1
+msgid "Test that we can GET a page and it returns a 200"
+msgstr ""
+
+#: of test_plus.test.CBVTestCase.get_instance:1
+msgid "Returns a decorated instance of a class-based generic view class."
+msgstr ""
+
+#: of test_plus.test.CBVTestCase.get_instance:3
+msgid ""
+"Use `initkwargs` to set expected class attributes. For example, set the "
+"`object` attribute on MyDetailView class:"
+msgstr ""
+
+#: of test_plus.test.CBVTestCase.get_instance:6
+msgid ""
+"instance = self.get_instance(MyDetailView, initkwargs={'object': obj}, "
+"request)"
+msgstr ""
+
+#: of test_plus.test.CBVTestCase.get_instance:8
+msgid ""
+"because SingleObjectMixin (part of generic.DetailView) expects "
+"self.object to be set before invoking get_context_data()."
+msgstr ""
+
+#: of test_plus.test.CBVTestCase.get_instance:11
+msgid "`args` and `kwargs` are the same values you would pass to ``reverse()``."
+msgstr ""
+
+#: of test_plus.test.CBVTestCase.get_response:1
+msgid "Obtain response from view class method (typically get or post)."
+msgstr ""
+
+#: of test_plus.test.CBVTestCase.get_response:3
+msgid ""
+"No middleware is invoked, but templates are rendered and context saved if"
+" appropriate."
+msgstr ""
+
+#: of test_plus.test.CBVTestCase.post:1
+msgid ""
+"Calls cls.post() method after instantiating view class with `initkwargs`."
+" Renders view templates and sets context if appropriate."
+msgstr ""
+
+#: of test_plus.test.NoPreviousResponse:1
+msgid "Bases: :class:`Exception`"
+msgstr ""
+
+#: of test_plus.TestCase:1 test_plus.test.TestCase:1
+msgid "Bases: :class:`django.test.testcases.TestCase`"
+msgstr ""
+
+#: of test_plus.TestCase:1 test_plus.test.TestCase:1
+msgid "Django TestCase with helpful additional features"
+msgstr ""
+
+#: of test_plus.TestCase.assertGoodView:1
+#: test_plus.test.TestCase.assertGoodView:1
+msgid ""
+"Quick-n-dirty testing of a given url name. Ensures URL returns a 200 "
+"status and that generates less than 50 database queries."
+msgstr ""
+
+#: of test_plus.TestCase.assertLoginRequired:1
+#: test_plus.test.TestCase.assertLoginRequired:1
+msgid "Ensure login is required to GET this URL"
+msgstr ""
+
+#: of test_plus.TestCase.get:1 test_plus.test.TestCase.get:1
+msgid "GET url by name using reverse()"
+msgstr ""
+
+#: of test_plus.TestCase.get:3 test_plus.TestCase.post:3
+#: test_plus.test.TestCase.get:3 test_plus.test.TestCase.post:3
+msgid "If reverse raises NoReverseMatch attempt to use it as a URL."
+msgstr ""
+
+#: of test_plus.TestCase.login:1 test_plus.test.TestCase.login:1
+msgid "Login a user"
+msgstr ""
+
+#: of test_plus.TestCase.make_user:1 test_plus.test.TestCase.make_user:1
+msgid ""
+"Build a user with <username> and password of 'password' for testing "
+"purposes."
+msgstr ""
+
+#: of test_plus.TestCase.post:1 test_plus.test.TestCase.post:1
+msgid "POST to url by name using reverse()"
+msgstr ""
+
+#: of test_plus.TestCase.response_200:1 test_plus.test.TestCase.response_200:1
+msgid "Given response has status_code 200"
+msgstr ""
+
+#: of test_plus.TestCase.response_201:1 test_plus.test.TestCase.response_201:1
+msgid "Given response has status_code 201"
+msgstr ""
+
+#: of test_plus.TestCase.response_302:1 test_plus.test.TestCase.response_302:1
+msgid "Given response has status_code 302"
+msgstr ""
+
+#: of test_plus.TestCase.response_401:1 test_plus.test.TestCase.response_401:1
+msgid "Given response has status_code 401"
+msgstr ""
+
+#: of test_plus.TestCase.response_403:1 test_plus.test.TestCase.response_403:1
+msgid "Given response has status_code 403"
+msgstr ""
+
+#: of test_plus.TestCase.response_404:1 test_plus.test.TestCase.response_404:1
+msgid "Given response has status_code 404"
+msgstr ""
+
+#: of test_plus.TestCase.response_405:1 test_plus.test.TestCase.response_405:1
+msgid "Given response has status_code 405"
+msgstr ""
+
+#: of test_plus.TestCase.response_410:1 test_plus.test.TestCase.response_410:1
+msgid "Given response has status_code 410"
+msgstr ""
+
+#: of test_plus.TestCase.reverse:1 test_plus.test.TestCase.reverse:1
+msgid "Reverse a url, convenience to avoid having to import reverse in tests"
+msgstr ""
+
+#: of test_plus.test.login:1
+msgid "Bases: :class:`object`"
+msgstr ""
+
+#: of test_plus.test.login:1
+msgid ""
+"A useful login context for Django tests.  If the first argument is a "
+"User, we will login with that user's username.  If no password is given "
+"we will use 'password'."
+msgstr ""
+
+#: ../../modules/test_plus.rst:25
+msgid "Module contents"
+msgstr ""
+
