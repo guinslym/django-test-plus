@@ -38,6 +38,9 @@ msgid ""
 "create *your own* sub-class on a per project basis. This will allow you "
 "to add your own project specific helper methods."
 msgstr ""
+"ce script est suffisant pour vous permettre d'utiliser le module "
+"django-test-plus. Mais on vous encourage de créer *votre propre* sous-classe"
+" pour chaque project. Ceci vous permettra "
 
 #: ../../usage.rst:17
 msgid ""
