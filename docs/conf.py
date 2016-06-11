@@ -75,7 +75,7 @@ release = '1.0.9'
 #For translation
 locale_dirs = ['locale/']   # path is example but recommended.
 gettext_compact = False     # optional.
-language = 'en'
+language = 'fr'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
