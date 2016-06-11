@@ -1,0 +1,10 @@
+Todo:
+ ☐ Create Fr-translation
+ ☐ Add it to ReadTheDocs
+ 
+Documenation:
+ ☐ http://www.sphinx-doc.org/en/stable/intl.html
+
+Question:
+ ☐ how to add a link to the english documentation.
+ ☐ Can a Documentation be offer in different language with a:href link without creating another repo?
